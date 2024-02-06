@@ -34,15 +34,15 @@
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: const Color(0xFF1565C0),
-        //   title: Text(
-        //     "User Profile",
-        //     style: GoogleFonts.bebasNeue(
-        //       fontSize: 25,
-        //     ),
-        //   ),
-        // ),
+// appBar: AppBar(
+//   backgroundColor: const Color(0xFF1565C0),
+//   title: Text(
+//     "User Profile",
+//     style: GoogleFonts.bebasNeue(
+//       fontSize: 25,
+//     ),
+//   ),
+// ),
 //         body: Center(
 //           child: FutureBuilder<Map<String, dynamic>>(
 //               future: userDataFuture,
@@ -174,25 +174,26 @@ class UserScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color(0xFF1565C0),
-          title: Text(
-            "User Profile",
-            style: GoogleFonts.bebasNeue(
-              fontSize: 25,
-            ),
+        backgroundColor: const Color(0xFF1565C0),
+        title: Text(
+          "User Profile",
+          style: GoogleFonts.bebasNeue(
+            fontSize: 25,
           ),
         ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 60.0,
-              backgroundImage: AssetImage('assets/Avatar.png'), // replace with your image asset
+              backgroundImage: AssetImage(
+                  'assets/Avatar.png'), // replace with your image asset
             ),
             SizedBox(height: 20.0),
             Text(
-              'Name:Ritesh Giri', // replace with user's name
+              'Name:Aashutosh Paneru', // replace with user's name
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -200,7 +201,7 @@ class UserScreen extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              'Email:ritesh.g@gmail.com', // replace with user's email
+              'Email:Aashutosh@gmail.com', // replace with user's email
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.grey,
